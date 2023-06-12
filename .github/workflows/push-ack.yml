@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_on_all_pushes:
+    runs-on: ubuntu-latest
+    steps:
+      - name "Who dun it?"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.html_url }}
+          UL: ${{ github.event.pull_request.user.login }}
+        run: |
+          echo "Pushed by $UL - $PR"
