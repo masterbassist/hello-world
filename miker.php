@@ -1,6 +1,6 @@
 <?php
 
 print "Hello, mah world!\n";
-sleep(9);
+sleep(2);
 exit(0);
 ?>
