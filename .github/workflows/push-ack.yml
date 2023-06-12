@@ -1,8 +1,5 @@
 on:
   push:
-    branches:
-      - main
-
 jobs:
   run_on_all_pushes:
     runs-on: ubuntu-latest
