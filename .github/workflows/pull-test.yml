@@ -1,0 +1,11 @@
+name: Pull request test
+on:
+  push:
+    branches:
+      - main
+jobs:
+  pull_sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
