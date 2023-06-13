@@ -2,7 +2,7 @@ name: Pull request test
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   pull_sync:
     runs-on: ubuntu-latest
