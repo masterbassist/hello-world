@@ -1,6 +1,7 @@
 <?php
 
 print "Hello, world!\n";
-sleep(2);
+sleep(10);
+print "Done sleeping\n";
 exit(0);
 ?>
